@@ -1,0 +1,1 @@
+# C++ Console template specific documentation

@@ -1,0 +1,1 @@
+# C++ Qt 6 QML template specific documentation
