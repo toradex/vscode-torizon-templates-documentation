@@ -1,0 +1,1 @@
+# .NET 6 C# Avalonia Frame Buffer DRM template specific documentation

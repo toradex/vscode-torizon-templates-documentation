@@ -1,0 +1,1 @@
+# Rust Console template specific documentation

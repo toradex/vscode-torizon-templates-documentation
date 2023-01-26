@@ -1,0 +1,1 @@
+# .NET 6 C# Uno Platform Frame Buffer template specific documentation
