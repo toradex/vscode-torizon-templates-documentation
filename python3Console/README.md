@@ -1,5 +1,6 @@
 
-# Python 3 Console template
+
+# Python 3 Console template specific documentation
 
 How to create a virtual environment on this template:
 
@@ -21,5 +22,8 @@ For more details, please watch the demonstration video below:
   <source src="https://raw.githubusercontent.com/toradex/vscode-torizon-templates-documentation/main/common/python3/createEnvPython3.mp4" type="video/mp4">
 </video>
 
+[](https://user-images.githubusercontent.com/29797557/212500726-26f98466-dd21-46e1-b793-a08c803e2c23.mp4)
+
+[The line above renders the video on GitHub but not on VSCode ]:<>
 
 [As of now, the supported types of videos and audios are described in https://github.com/microsoft/vscode-docs/blob/vnext/release-notes/v1_72.md#built-in-preview-for-some-audio-and-video-files ]:<>
