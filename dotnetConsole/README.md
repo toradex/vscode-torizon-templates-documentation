@@ -1,0 +1,1 @@
+# .NET 6 C# Console template specific documentation

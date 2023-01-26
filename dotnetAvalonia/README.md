@@ -1,0 +1,1 @@
+# .NET6 C# Avalonia GTK MVVM template specific documentation
