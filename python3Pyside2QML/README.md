@@ -18,7 +18,7 @@ on the **requirements.release.txt** file)
 
 For more details, please watch the demonstration video below:
 
-<video controls width="700">
+<video controls width="80%">
   <source src="https://raw.githubusercontent.com/toradex/vscode-torizon-templates-documentation/main/common/python3/createEnvPython3.mp4" type="video/mp4">
 </video>
 
