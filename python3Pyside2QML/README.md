@@ -4,11 +4,15 @@
 
 How to create a virtual environment on this template:
 
+ - On the terminal, run the command:
+
+      `python -m venv .venv --system-site-packages`
+
+      If you do not want to use Python packages installed with **apt** on your host remove the **--system-site-packages** argument. In this case, you have to include **debugpy** on the **requirements-debug.txt** file.
+
  - Press **F1**
- - Select the command **Python: Create Environment**
- - Select the environment type (venv or conda)
- - Select a Python interpreter (this will be the version installed inside the
- venv)
+ - Select the command **Python: Select Interpreter**
+ - Select the Python interpreter of your **.venv** 
  - If it doesn't select the Python from the venv, press F1 and select the command
  **Developer: Reload Window**)
 
@@ -18,11 +22,11 @@ on the **requirements.release.txt** file)
 
 For more details, please watch the demonstration video below:
 
-<video controls width="80%">
-  <source src="https://raw.githubusercontent.com/toradex/vscode-torizon-templates-documentation/main/common/python3/createEnvPython3.mp4" type="video/mp4">
+<video controls width="90%">
+  <source src="https://raw.githubusercontent.com/toradex/vscode-torizon-templates-documentation/main/common/python3/createEnvPython3-v2.mp4" type="video/mp4">
 </video>
 
-[](https://user-images.githubusercontent.com/29797557/212500726-26f98466-dd21-46e1-b793-a08c803e2c23.mp4)
+[](https://raw.githubusercontent.com/toradex/vscode-torizon-templates-documentation/main/common/python3/createEnvPython3-v2.mp4)
 
 [The line above renders the video on GitHub but not on VSCode ]:<>
 
