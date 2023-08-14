@@ -2,6 +2,8 @@
 
 # Python 3 Pyside 2(Qt 5) QML template specific documentation
 
+> ⚠️ Remember to maintain pip updated, with the command `python -m pip install --upgrade pip`
+
 All projects follow the pipeline of tasks described in the [common contributing documentation](https://github.com/toradex/vscode-torizon-templates/blob/bookworm/CONTRIBUTING.md#contributing-templates). However, each project has its own specificities in terms of technologies and methods used to compile, deploy, and debug the code. Therefore, each of them has their own specific tasks in the **tasks.json** file.
 
 As Python is an interpreted language, it does not have a compile step.
