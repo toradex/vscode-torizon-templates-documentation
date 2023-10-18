@@ -2,7 +2,7 @@
 
 All projects follow the pipeline of tasks described in the [common contributing documentation](https://github.com/toradex/vscode-torizon-templates/blob/bookworm/CONTRIBUTING.md#contributing-templates). However, each project has its own specificities in terms of technologies and methods used to compile, deploy, and debug the code. Therefore, each of them has their own specific tasks in the **tasks.json** file.
 
-This C++ console template uses **cmake** and **make** to compile the code, with tasks named **build-configure-\${architecture}** (creates the destination directory for the future compiled code and generates the Makefile, using **cmake**) and **build-debug-\${architecture}** (compiles the code). It also uses an SDK container to cross-compile the code. This container image is built using the **Dockerfile.sdk** file, and the tasks that build the containers are named **build-container-image-sdk-\${architecture}**.
+This C++ console template uses **cmake** and **make** to compile the code, with tasks named **build-configure-\${architecture}** (creates the destination directory for the future compiled code and generates the Makefile, using **cmake**) and **build-debug-\${architecture}** (compiles the code). It also uses an SDK container to compile the code (through armhf and arm64 emulation). This container image is built using the **Dockerfile.sdk** file, and the tasks that build the containers are named **build-container-image-sdk-\${architecture}**.
 
 The compiled code is then copied into the running debug container using **scp**, in the task named **deploy-torizon-\${architecture}**. This task contains the entire sequence of tasks executed by the pipeline and, therefore, is unique to each template.
 
