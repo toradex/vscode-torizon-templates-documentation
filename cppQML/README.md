@@ -8,10 +8,28 @@ The compiled code is then copied into the running debug container using **scp**,
 
 Finally, remote debugging is performed by attaching to the GDB on the running container on the device using a [VSCode feature called Pipe Transport](https://code.visualstudio.com/docs/cpp/pipe-transport). For local debugging, the [VSCode method for C/C++ Debugging](https://code.visualstudio.com/docs/cpp/launch-json-reference) is used. The tasks that perform the debugging are those present in the **launch.json** file.
 
---------------- ADICIONAR DE ONDE VEM O SOURCE CODE DESSE TEMPLATE AQUI!!!!!!! -------------------
+
+The source code of the template is inspired by the one created using [the examples present on Qt Creator](https://doc.qt.io/qt-6/qtexamplesandtutorials.html), customizing it to a Torizon Qt QML (sort of Hello World) application.
 
 ## Qt Creator and Qt Design Studio
 
 You can install Qt features though **apt**, by installing packages like **qt6-base-dev** and **qt6-declarative-dev**, recommended by **check-deps**. However, to ensure better functionality on the Local Debug modes, it is recommended to install Qt through [their webpage](https://www.qt.io/download), even the free version.
 
-You can open your application on Qt Creator and Qt Design Studio using these tasks present on the **task runner**. Also n the **task runner**, it is possible to Start a GDB Server and perform the debug through there.
+You can open your application on Qt Creator and Qt Design Studio using the tasks **open-in-qt-creator** and **open-in-qt-design-studio**.
+
+Also in the **task runner**, it is possible to Start a GDB Server and perform the debug through there.
+
+Also, it is possible to debug the application (including the QML part) on Qt Creator, through the task **start-gdb-server-\<remote or local>-\${architecture}**. To do it, follow this steps:
+
+ - Open the project on Qt Creator, through the **open-in-qt-creator** (it is necessary to open it through the task)
+ - Run the **start-gdb-server-\<remote or local>-\${architecture}** task
+ - On Qt Creator, **Attach to Running Debug Server** (or **Attach to QML Port** for debugging the QML):
+
+    ![](https://raw.githubusercontent.com/toradex/vscode-torizon-templates-documentation/main/cppQML/attachDebug.png)
+
+ - Confirm the debugging information and press **Ok**:
+
+    ![](https://raw.githubusercontent.com/toradex/vscode-torizon-templates-documentation/main/cppQML/checkInfoAttachDebug.png)
+
+ 
+
