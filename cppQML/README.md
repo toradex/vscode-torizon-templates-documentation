@@ -13,14 +13,15 @@ The source code of the template is inspired by the one created using [the exampl
 
 ## Qt Creator and Qt Design Studio
 
-You can install Qt features though **apt**, by installing packages like **qt6-base-dev** and **qt6-declarative-dev**, recommended by **check-deps**. However, to ensure better functionality on the Local Debug modes, it is recommended to install Qt through [their webpage](https://www.qt.io/download), even the free version.
-
 You can open your application on Qt Creator and Qt Design Studio using the tasks **open-in-qt-creator** and **open-in-qt-design-studio**.
 
-Also, it is possible to debug the application (including the QML part) on Qt Creator, through the task **start-gdb-server-\<remote or local>-\${architecture}**. To do it, follow this steps:
+Also, it is possible to debug the application (including the QML part) on Qt Creator, through the task **start-gdb-server-\<remote or local>-\${architecture}**. This task performs the same steps as running the Remote Debugging (pressing `F5`) on VSCode, but instead of attaching to GDB like in VSCode it just runs the GDB server on the board in the end. To perform this form of debug, follow this steps:
 
  - Open the project on Qt Creator, through the **open-in-qt-creator-debug\${architecture}** task (**open-in-qt-creator** for local debug). It is necessary to open Qt Creator through this task.
- - Run the **start-gdb-server-\<remote or local>-\${architecture}** task
+ - Run the **start-gdb-server-\<remote or local>-\${architecture}** task. This task takes a while to run, and the message shown on the VSCode terminal when it is ready is `Listening port 2232`. You should wait for this message.
+
+    ![](https://raw.githubusercontent.com/toradex/vscode-torizon-templates-documentation/main/cppQML/startGDBServerTaskMessage.png)
+
  - On Qt Creator, **Attach to Running Debug Server** (or **Attach to QML Port** for debugging the QML):
 
     ![](https://raw.githubusercontent.com/toradex/vscode-torizon-templates-documentation/main/cppQML/attachDebug.png)
