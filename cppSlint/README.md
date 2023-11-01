@@ -1,1 +1,0 @@
-# C++ Slint Template Specific Documentation
